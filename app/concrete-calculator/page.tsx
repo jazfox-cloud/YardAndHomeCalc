@@ -27,6 +27,10 @@ const faqs: FAQItem[] = [
   {
     question: "When should I order ready-mix instead of bags?",
     answer: "Bagged concrete can work for small projects. Larger slabs may be easier and more consistent with ready-mix delivery."
+  },
+  {
+    question: "Does this concrete calculator include delivery cost?",
+    answer: "No. The optional cost field estimates material cost by cubic yard only. Ready-mix delivery, short-load fees, tools, reinforcement, base material, and labor are not included."
   }
 ];
 
@@ -48,7 +52,7 @@ export default function ConcreteCalculatorPage() {
       <CalculatorIntro
         description="Use this concrete calculator to estimate volume, cubic yards, bag quantities, waste allowance, and optional cost for slabs, pads, walkways, and small pours."
         title="Concrete Calculator"
-        updated="June 23, 2026"
+        updated="July 6, 2026"
       />
       <ConcreteCalculator />
       <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_320px]">
@@ -72,11 +76,27 @@ export default function ConcreteCalculatorPage() {
             </p>
           </section>
           <section>
+            <h2 className="text-2xl font-bold text-evergreen">Concrete cost estimate</h2>
+            <div className="mt-3 space-y-3 leading-7 text-slate-700">
+              <p>
+                The optional price field estimates concrete material cost by cubic yard. This
+                is useful for a quick slab budget, but it is not the same as a full delivered
+                ready-mix quote.
+              </p>
+              <p>
+                Bagged concrete costs are usually easier to compare by bag count. Ready-mix
+                quotes may include delivery, short-load fees, minimum order sizes, fuel
+                surcharges, and local taxes. Confirm those details before buying.
+              </p>
+            </div>
+          </section>
+          <section>
             <h2 className="text-2xl font-bold text-evergreen">Tips before buying</h2>
             <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-slate-700">
               <li>Check local requirements for base preparation, reinforcement, and slab thickness.</li>
               <li>Confirm bag yield on the product label before purchasing.</li>
               <li>Plan mixing, placement, screeding, and finishing before concrete starts setting.</li>
+              <li>Ask ready-mix suppliers whether delivery, short-load fees, and taxes are included.</li>
             </ul>
           </section>
           <FAQ items={faqs} />

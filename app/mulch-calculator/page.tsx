@@ -27,6 +27,10 @@ const faqs: FAQItem[] = [
   {
     question: "Should I add extra mulch for waste?",
     answer: "A 5% to 10% extra allowance is useful for uneven beds, settling, edging, and measuring variation."
+  },
+  {
+    question: "Should I buy mulch by cubic feet or cubic yards?",
+    answer: "Bagged mulch is usually easier to compare by cubic feet, while bulk mulch is commonly sold by cubic yards. One cubic yard equals 27 cubic feet."
   }
 ];
 
@@ -48,7 +52,7 @@ export default function MulchCalculatorPage() {
       <CalculatorIntro
         description="Use this mulch calculator to estimate cubic feet, cubic yards, bag count, and optional material cost for garden beds, borders, and landscaping areas."
         title="Mulch Calculator"
-        updated="June 23, 2026"
+        updated="July 6, 2026"
       />
       <MulchCalculator />
       <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_320px]">
@@ -72,11 +76,26 @@ export default function MulchCalculatorPage() {
             </p>
           </section>
           <section>
+            <h2 className="text-2xl font-bold text-evergreen">Cubic feet vs cubic yards</h2>
+            <div className="mt-3 space-y-3 leading-7 text-slate-700">
+              <p>
+                Mulch bags are often labeled in cubic feet, while bulk mulch from landscape
+                suppliers is usually priced by cubic yard. Use cubic feet when comparing bag
+                sizes, and cubic yards when ordering bulk delivery.
+              </p>
+              <p>
+                The key conversion is simple: 1 cubic yard = 27 cubic feet. For example, 54
+                cubic feet of mulch is 2 cubic yards before any waste allowance.
+              </p>
+            </div>
+          </section>
+          <section>
             <h2 className="text-2xl font-bold text-evergreen">Tips before buying</h2>
             <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-slate-700">
               <li>Confirm whether your supplier sells mulch by bag, cubic foot, or cubic yard.</li>
               <li>Keep mulch thinner near stems, trunks, foundations, and hardscape edges.</li>
               <li>Add extra material for settling and uneven bed surfaces.</li>
+              <li>Compare bagged mulch by cubic feet, not just the number of bags.</li>
             </ul>
           </section>
           <FAQ items={faqs} />

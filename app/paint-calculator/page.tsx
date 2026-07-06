@@ -60,7 +60,7 @@ export default function PaintCalculatorPage() {
       <CalculatorIntro
         description="Use this paint calculator to estimate wall area, paintable area, gallons to buy, and optional paint cost for rooms, garages, and simple exterior wall projects."
         title="Paint Calculator"
-        updated="July 2, 2026"
+        updated="July 6, 2026"
       />
       <PaintCalculator />
       <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_320px]">
