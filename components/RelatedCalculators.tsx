@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const calculators = [
-  { href: "/mulch-calculator", label: "Mulch Calculator" },
-  { href: "/concrete-calculator", label: "Concrete Calculator" },
-  { href: "/paint-calculator", label: "Paint Calculator" }
+  { href: "/mulch-calculator/", label: "Mulch Calculator" },
+  { href: "/concrete-calculator/", label: "Concrete Calculator" },
+  { href: "/paint-calculator/", label: "Paint Calculator" }
 ];
 
 export function RelatedCalculators({ current }: { current: string }) {

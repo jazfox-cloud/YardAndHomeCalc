@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const navItems = [
-  { href: "/mulch-calculator", label: "Mulch" },
-  { href: "/concrete-calculator", label: "Concrete" },
-  { href: "/paint-calculator", label: "Paint" },
-  { href: "/about", label: "About" }
+  { href: "/mulch-calculator/", label: "Mulch" },
+  { href: "/concrete-calculator/", label: "Concrete" },
+  { href: "/paint-calculator/", label: "Paint" },
+  { href: "/about/", label: "About" }
 ];
 
 export function Header() {

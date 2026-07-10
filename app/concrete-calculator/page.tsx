@@ -100,7 +100,7 @@ export default function ConcreteCalculatorPage() {
             </ul>
           </section>
           <FAQ items={faqs} />
-          <RelatedCalculators current="/concrete-calculator" />
+          <RelatedCalculators current="/concrete-calculator/" />
         </div>
         <DisclaimerBox />
       </div>

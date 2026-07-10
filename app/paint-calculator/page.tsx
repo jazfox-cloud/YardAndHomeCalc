@@ -115,7 +115,7 @@ export default function PaintCalculatorPage() {
             </div>
           </section>
           <FAQ items={faqs} />
-          <RelatedCalculators current="/paint-calculator" />
+          <RelatedCalculators current="/paint-calculator/" />
         </div>
         <DisclaimerBox />
       </div>

@@ -5,17 +5,17 @@ import { DisclaimerBox } from "@/components/DisclaimerBox";
 const calculators = [
   {
     title: "Mulch Calculator",
-    href: "/mulch-calculator",
+    href: "/mulch-calculator/",
     description: "Estimate cubic feet, cubic yards, bags, and cost for garden beds and landscape areas."
   },
   {
     title: "Concrete Calculator",
-    href: "/concrete-calculator",
+    href: "/concrete-calculator/",
     description: "Estimate concrete volume, cubic yards, and 40, 60, or 80 lb bags for slabs and pads."
   },
   {
     title: "Paint Calculator",
-    href: "/paint-calculator",
+    href: "/paint-calculator/",
     description: "Estimate gallons for walls and rooms after doors, windows, coats, and coverage."
   }
 ];
@@ -39,7 +39,7 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 className="rounded-md bg-clay px-5 py-3 font-semibold text-white shadow-panel"
-                href="/mulch-calculator"
+                href="/mulch-calculator/"
               >
                 Start calculating
               </Link>

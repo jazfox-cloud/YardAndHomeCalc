@@ -99,7 +99,7 @@ export default function MulchCalculatorPage() {
             </ul>
           </section>
           <FAQ items={faqs} />
-          <RelatedCalculators current="/mulch-calculator" />
+          <RelatedCalculators current="/mulch-calculator/" />
         </div>
         <DisclaimerBox />
       </div>
