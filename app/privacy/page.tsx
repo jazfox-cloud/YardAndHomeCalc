@@ -16,15 +16,17 @@ export default function PrivacyPage() {
           processed in your browser and are not submitted to a backend service by this site.
         </p>
         <p>
-          We may use basic analytics, advertising, or affiliate tools in the future to
-          understand site usage and support the website. Those services may use cookies or
-          similar technologies according to their own policies.
+          We may use analytics, affiliate tools, and third-party advertising services,
+          including Google AdSense, to understand site usage and support the website. These
+          providers may process IP addresses, browser or device information, page views,
+          referral data, cookies, web beacons, or similar identifiers.
         </p>
+        <p>Third-party vendors, including Google, may use advertising cookies to serve and measure ads based on your prior visits to this website or other websites. You can control or opt out of personalized Google advertising in <a className="underline" href="https://adssettings.google.com/">Google Ads Settings</a>. Additional industry opt-out choices are available at <a className="underline" href="https://www.aboutads.info/choices/">aboutads.info</a>.</p>
         <p>
           If you contact us by email, we may use the information you provide to respond to
           your message and improve the calculators.
         </p>
-        <p>Last updated: June 23, 2026.</p>
+        <p>Last updated: July 11, 2026.</p>
       </div>
     </main>
   );
