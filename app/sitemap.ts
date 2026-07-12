@@ -6,7 +6,7 @@ const routes = [
   { path: "", lastModified: "2026-06-23" },
   { path: "/mulch-calculator", lastModified: "2026-07-06" },
   { path: "/concrete-calculator", lastModified: "2026-07-06" },
-  { path: "/paint-calculator", lastModified: "2026-07-06" },
+  { path: "/paint-calculator", lastModified: "2026-07-11" },
   { path: "/about", lastModified: "2026-06-23" },
   { path: "/contact", lastModified: "2026-06-23" },
   { path: "/privacy", lastModified: "2026-06-23" },
