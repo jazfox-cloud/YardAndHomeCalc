@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import { EmailLink } from "@/components/EmailLink";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Contact | Yard & Home Calc",
   description: "Contact Yard & Home Calc with questions, corrections, or calculator feedback.",
-  alternates: { canonical: "/contact/" }
-};
+  path: "/contact/"
+});
 
 export default function ContactPage() {
   return (
@@ -15,9 +16,7 @@ export default function ContactPage() {
           Have feedback, a correction, or a calculator request? Contact Yard & Home Calc at:
         </p>
         <p>
-          <a className="font-semibold text-clay hover:underline" href="mailto:hello@yardandhomecalc.com">
-            hello@yardandhomecalc.com
-          </a>
+          <EmailLink className="font-semibold text-clay hover:underline" />
         </p>
         <p>
           Please include the calculator page, the measurements you entered, and what you

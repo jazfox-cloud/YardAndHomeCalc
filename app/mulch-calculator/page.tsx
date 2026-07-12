@@ -1,19 +1,19 @@
-import type { Metadata } from "next";
 import { CalculatorIntro } from "@/components/CalculatorIntro";
 import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { FAQ, type FAQItem } from "@/components/FAQ";
 import { RelatedCalculators } from "@/components/RelatedCalculators";
 import { MulchCalculator } from "@/components/calculators/MulchCalculator";
 import { breadcrumbSchema, faqSchema, webApplicationSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/metadata";
 
 const description =
   "Estimate how much mulch you need by area, depth, cubic yards, bags, and cost. Free calculator for yard and landscaping projects.";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Mulch Calculator - Estimate Mulch by Cubic Yard | Yard & Home Calc",
   description,
-  alternates: { canonical: "/mulch-calculator/" }
-};
+  path: "/mulch-calculator/"
+});
 
 const faqs: FAQItem[] = [
   {

@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Disclaimer | Yard & Home Calc",
   description: "Estimator disclaimer for Yard & Home Calc.",
-  alternates: { canonical: "/disclaimer/" }
-};
+  path: "/disclaimer/"
+});
 
 export default function DisclaimerPage() {
   return (

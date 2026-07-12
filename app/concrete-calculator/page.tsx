@@ -1,19 +1,19 @@
-import type { Metadata } from "next";
 import { CalculatorIntro } from "@/components/CalculatorIntro";
 import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { FAQ, type FAQItem } from "@/components/FAQ";
 import { RelatedCalculators } from "@/components/RelatedCalculators";
 import { ConcreteCalculator } from "@/components/calculators/ConcreteCalculator";
 import { breadcrumbSchema, faqSchema, webApplicationSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/metadata";
 
 const description =
   "Estimate concrete cubic feet, cubic yards, 40 lb bags, 60 lb bags, 80 lb bags, and cost for slabs, pads, and small projects.";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Concrete Calculator - Bags, Yards, and Slab Estimate | Yard & Home Calc",
   description,
-  alternates: { canonical: "/concrete-calculator/" }
-};
+  path: "/concrete-calculator/"
+});
 
 const faqs: FAQItem[] = [
   {

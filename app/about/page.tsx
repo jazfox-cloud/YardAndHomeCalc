@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "About | Yard & Home Calc",
   description: "Learn about Yard & Home Calc, an independent calculator site for yard and home project estimates.",
-  alternates: { canonical: "/about/" }
-};
+  path: "/about/"
+});
 
 export default function AboutPage() {
   return (

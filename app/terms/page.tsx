@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Terms of Use | Yard & Home Calc",
   description: "Terms of use for Yard & Home Calc.",
-  alternates: { canonical: "/terms/" }
-};
+  path: "/terms/"
+});
 
 export default function TermsPage() {
   return (

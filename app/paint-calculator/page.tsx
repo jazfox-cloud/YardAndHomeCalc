@@ -1,19 +1,19 @@
-import type { Metadata } from "next";
 import { CalculatorIntro } from "@/components/CalculatorIntro";
 import { DisclaimerBox } from "@/components/DisclaimerBox";
 import { FAQ, type FAQItem } from "@/components/FAQ";
 import { RelatedCalculators } from "@/components/RelatedCalculators";
 import { PaintCalculator } from "@/components/calculators/PaintCalculator";
 import { breadcrumbSchema, faqSchema, webApplicationSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/metadata";
 
 const description =
   "Estimate gallons of paint for walls, rooms, garages, and exterior surfaces by area, doors, windows, coats, coverage, waste, and cost.";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Paint Calculator - Estimate Gallons for Walls, Rooms, and Garages | Yard & Home Calc",
   description,
-  alternates: { canonical: "/paint-calculator/" }
-};
+  path: "/paint-calculator/"
+});
 
 const faqs: FAQItem[] = [
   {
