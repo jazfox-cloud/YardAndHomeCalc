@@ -2,7 +2,8 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Disclaimer | Yard & Home Calc",
-  description: "Estimator disclaimer for Yard & Home Calc.",
+  description:
+    "Understand the limits of Yard & Home Calc estimates and why material quantities should be checked against product labels and supplier guidance.",
   path: "/disclaimer/"
 });
 

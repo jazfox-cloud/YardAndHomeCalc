@@ -2,27 +2,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { pageMetadata, siteUrl } from "@/lib/metadata";
 import { organizationSchema } from "@/lib/schema";
 
-const siteUrl = "https://yardandhomecalc.com";
+const homeTitle = "Yard & Home Calc - Free Yard and Home Project Calculators";
+const homeDescription =
+  "Free calculators for yard and home projects. Estimate mulch, concrete, paint, and project material needs before you buy.";
+const homeMetadata = pageMetadata({
+  title: homeTitle,
+  description: homeDescription,
+  path: "/"
+});
 
 export const metadata: Metadata = {
+  ...homeMetadata,
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Yard & Home Calc - Free Yard and Home Project Calculators",
+    default: homeTitle,
     template: "%s"
-  },
-  description:
-    "Free calculators for yard and home projects. Estimate mulch, concrete, paint, and project material needs before you buy.",
-  alternates: {
-    canonical: "/"
-  },
-  openGraph: {
-    title: "Yard & Home Calc",
-    description: "Free calculators for yard and home projects.",
-    url: siteUrl,
-    siteName: "Yard & Home Calc",
-    type: "website"
   }
 };
 

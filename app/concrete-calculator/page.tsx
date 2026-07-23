@@ -10,7 +10,7 @@ const description =
   "Estimate concrete cubic feet, cubic yards, 40 lb bags, 60 lb bags, 80 lb bags, and cost for slabs, pads, and small projects.";
 
 export const metadata = pageMetadata({
-  title: "Concrete Calculator - Bags, Yards, and Slab Estimate | Yard & Home Calc",
+  title: "Concrete Calculator: Yards, Bags & Cost | Yard & Home Calc",
   description,
   path: "/concrete-calculator/"
 });

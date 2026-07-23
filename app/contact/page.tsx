@@ -3,7 +3,8 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Contact | Yard & Home Calc",
-  description: "Contact Yard & Home Calc with questions, corrections, or calculator feedback.",
+  description:
+    "Contact Yard & Home Calc to report calculator issues, suggest corrections, or share feedback about yard and home project estimates.",
   path: "/contact/"
 });
 

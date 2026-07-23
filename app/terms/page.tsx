@@ -2,7 +2,8 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Terms of Use | Yard & Home Calc",
-  description: "Terms of use for Yard & Home Calc.",
+  description:
+    "Review the terms for using Yard & Home Calc calculators, including estimate limitations and your responsibility to verify project measurements.",
   path: "/terms/"
 });
 

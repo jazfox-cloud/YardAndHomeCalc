@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Yard &amp; Home Calc social sharing card</title>
+  <desc id="desc">Abstract house, yard measurement grid, and calculator symbols in the Yard &amp; Home Calc color palette.</desc>
+  <rect width="1200" height="630" fill="#f6f7f4"/>
+  <rect x="0" y="0" width="1200" height="20" fill="#c96f2d"/>
+  <path d="M0 465C185 418 326 438 480 500C650 570 837 575 1200 454V630H0Z" fill="#dfe9df"/>
+  <g opacity="0.7" stroke="#b8cabf" stroke-width="2">
+    <path d="M60 460H1140M60 510H1140M60 560H1140"/>
+    <path d="M150 410V600M250 410V600M350 410V600M450 410V600M550 410V600M650 410V600M750 410V600M850 410V600M950 410V600M1050 410V600"/>
+  </g>
+  <g transform="translate(760 104)">
+    <path d="M20 196L196 44L372 196V390H20Z" fill="#17483f"/>
+    <path d="M0 202L196 28L392 202" fill="none" stroke="#c96f2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    <rect x="158" y="248" width="76" height="142" rx="8" fill="#f6f7f4"/>
+    <rect x="52" y="228" width="76" height="70" rx="8" fill="#f6f7f4"/>
+    <rect x="264" y="228" width="76" height="70" rx="8" fill="#f6f7f4"/>
+    <path d="M48 438H344" stroke="#17483f" stroke-linecap="round" stroke-width="12"/>
+    <path d="M48 418V458M344 418V458" stroke="#17483f" stroke-linecap="round" stroke-width="12"/>
+    <text x="196" y="488" fill="#17483f" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle">MEASURE</text>
+  </g>
+  <g transform="translate(84 112)">
+    <rect width="584" height="346" rx="28" fill="#ffffff" stroke="#d9dfda" stroke-width="4"/>
+    <rect width="584" height="76" rx="28" fill="#17483f"/>
+    <path d="M0 48H584V76H0Z" fill="#17483f"/>
+    <circle cx="42" cy="38" r="10" fill="#c96f2d"/>
+    <circle cx="76" cy="38" r="10" fill="#f6f7f4" opacity="0.75"/>
+    <circle cx="110" cy="38" r="10" fill="#f6f7f4" opacity="0.5"/>
+    <rect x="38" y="116" width="226" height="48" rx="8" fill="#f6f7f4" stroke="#cad4cd" stroke-width="3"/>
+    <rect x="38" y="188" width="226" height="48" rx="8" fill="#f6f7f4" stroke="#cad4cd" stroke-width="3"/>
+    <rect x="310" y="116" width="236" height="120" rx="12" fill="#eef3ee"/>
+    <path d="M342 205L388 159L430 190L502 136" fill="none" stroke="#c96f2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+    <rect x="38" y="272" width="508" height="38" rx="8" fill="#17483f"/>
+  </g>
+  <text x="84" y="518" fill="#17483f" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Yard &amp; Home Calc</text>
+  <text x="86" y="570" fill="#485b54" font-family="Arial, Helvetica, sans-serif" font-size="30">Practical project calculators</text>
+</svg>

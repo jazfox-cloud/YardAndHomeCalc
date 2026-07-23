@@ -2,7 +2,8 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Privacy Policy | Yard & Home Calc",
-  description: "Privacy policy for Yard & Home Calc.",
+  description:
+    "Read how Yard & Home Calc handles browser-based calculator inputs, analytics, advertising services, cookies, and information sent by email.",
   path: "/privacy/"
 });
 

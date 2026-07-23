@@ -10,7 +10,7 @@ const description =
   "Estimate gallons of paint for walls, rooms, garages, and exterior surfaces by area, doors, windows, coats, coverage, waste, and cost.";
 
 export const metadata = pageMetadata({
-  title: "Paint Calculator - Estimate Gallons for Walls, Rooms, and Garages | Yard & Home Calc",
+  title: "Paint Calculator: Gallons & Cost | Yard & Home Calc",
   description,
   path: "/paint-calculator/"
 });

@@ -10,7 +10,7 @@ const description =
   "Estimate how much mulch you need by area, depth, cubic yards, bags, and cost. Free calculator for yard and landscaping projects.";
 
 export const metadata = pageMetadata({
-  title: "Mulch Calculator - Estimate Mulch by Cubic Yard | Yard & Home Calc",
+  title: "Mulch Calculator: Yards, Bags & Cost | Yard & Home Calc",
   description,
   path: "/mulch-calculator/"
 });

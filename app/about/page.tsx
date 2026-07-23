@@ -2,7 +2,8 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "About | Yard & Home Calc",
-  description: "Learn about Yard & Home Calc, an independent calculator site for yard and home project estimates.",
+  description:
+    "Learn how Yard & Home Calc helps homeowners, renters, and DIY planners estimate mulch, concrete, paint, and other project material needs.",
   path: "/about/"
 });
 
