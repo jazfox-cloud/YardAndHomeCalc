@@ -1,3 +1,5 @@
+import { toNonNegative } from "@/lib/calculators/validation";
+
 export type PaintInput = {
   roomLengthFeet: number;
   roomWidthFeet: number;
@@ -11,15 +13,24 @@ export type PaintInput = {
 };
 
 export function calculatePaint(input: PaintInput) {
-  const perimeter = 2 * (input.roomLengthFeet + input.roomWidthFeet);
-  const wallArea = perimeter * input.wallHeightFeet;
-  const openingArea = input.doors * 21 + input.windows * 15;
+  const roomLengthFeet = toNonNegative(input.roomLengthFeet);
+  const roomWidthFeet = toNonNegative(input.roomWidthFeet);
+  const wallHeightFeet = toNonNegative(input.wallHeightFeet);
+  const doors = toNonNegative(input.doors);
+  const windows = toNonNegative(input.windows);
+  const coats = toNonNegative(input.coats);
+  const coveragePerGallon = toNonNegative(input.coveragePerGallon);
+  const wastePercent = toNonNegative(input.wastePercent);
+  const pricePerGallon = toNonNegative(input.pricePerGallon);
+  const perimeter = 2 * (roomLengthFeet + roomWidthFeet);
+  const wallArea = perimeter * wallHeightFeet;
+  const openingArea = doors * 21 + windows * 15;
   const paintableArea = Math.max(wallArea - openingArea, 0);
   const gallons =
-    input.coveragePerGallon > 0
-      ? (paintableArea * input.coats * (1 + input.wastePercent / 100)) / input.coveragePerGallon
+    coveragePerGallon > 0
+      ? (paintableArea * coats * (1 + wastePercent / 100)) / coveragePerGallon
       : 0;
-  const estimatedCost = input.pricePerGallon > 0 ? gallons * input.pricePerGallon : 0;
+  const estimatedCost = pricePerGallon > 0 ? gallons * pricePerGallon : 0;
 
   return {
     wallArea,

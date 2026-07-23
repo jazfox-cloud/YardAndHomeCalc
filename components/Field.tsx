@@ -1,3 +1,5 @@
+import { toNonNegative } from "@/lib/calculators/validation";
+
 type FieldProps = {
   id: string;
   label: string;
@@ -17,7 +19,7 @@ export function Field({ id, label, value, min = 0, step = 0.1, suffix, onChange 
           className="min-h-12 w-full border-0 px-3 py-2"
           id={id}
           min={min}
-          onChange={(event) => onChange(Number(event.target.value))}
+          onChange={(event) => onChange(toNonNegative(Number(event.target.value)))}
           step={step}
           type="number"
           value={value}
